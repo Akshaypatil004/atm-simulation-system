@@ -1,0 +1,22 @@
+body{
+    background:#f5f7fb;
+}
+
+.card{
+    border:none;
+    border-radius:12px;
+    transition:all 0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.15);
+}
+
+.navbar{
+    padding:15px;
+}
+
+h3{
+    font-weight:600;
+}
