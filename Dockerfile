@@ -4,5 +4,11 @@ COPY . .
 RUN mvn clean package
 
 FROM tomcat:10.1-jdk17
+
+ENV PORT=8080
+
 COPY --from=build /app/target/atm-simulation-system.war /usr/local/tomcat/webapps/ROOT.war
+
 EXPOSE 8080
+
+CMD ["catalina.sh","run"]
